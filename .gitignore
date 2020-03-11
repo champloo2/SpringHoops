@@ -14,10 +14,25 @@
 *.jar
 *.war
 *.nar
+*.classpath
 *.ear
 *.zip
+*.project
+*.md
+*.MF
+*.settings
 *.tar.gz
+*mvnw
+*.cmd
+*.metadata
+*.mvnw
+*.plugins
+*.jar
 *.rar
+*.properties
+*.maven-wrapper.jar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/.metadata/
+SpringHoops/.mvn/wrapper/maven-wrapper.jar

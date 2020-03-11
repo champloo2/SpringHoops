@@ -27,6 +27,10 @@
 *.metadata
 *.mvnw
 *.plugins
+*.mvnw
+*.cmd
+*.metadata
+>>>>>>> setup
 *.jar
 *.rar
 *.properties
@@ -36,3 +40,8 @@
 hs_err_pid*
 /.metadata/
 SpringHoops/.mvn/wrapper/maven-wrapper.jar
+<<<<<<< HEAD
+=======
+SpringHoops/mvnw
+SpringHoops/.mvn/wrapper/maven-wrapper.jar
+>>>>>>> setup

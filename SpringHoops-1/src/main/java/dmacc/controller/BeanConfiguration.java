@@ -3,6 +3,7 @@ package dmacc.controller;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import dmacc.beans.Hoopshop;
 import dmacc.beans.Hulahoop;
 
 
@@ -14,7 +15,14 @@ public class BeanConfiguration {
 	@Bean
 	public Hulahoop hulahoop()
 	{
-		Hulahoop bean = new Hulahoop();
+		Hulahoop bean = new Hulahoop("red", 32);
+		return bean;
+	}
+	
+	@Bean
+	public Hoopshop hoopshop()
+	{
+		Hoopshop bean = new Hoopshop("Lunar Landings", "etsy", "@lunarlandings");
 		return bean;
 	}
 

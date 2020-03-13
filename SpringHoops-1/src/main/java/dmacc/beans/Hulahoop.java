@@ -1,11 +1,15 @@
 package dmacc.beans;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Hulahoop {
 	
 	private long id;
 	 private String color;
 	 private double outerDiamInches;
 	 private boolean isPolyPro;
+	 @Autowired
+	 private Hoopshop hoopShop;
 	 
 	public Hulahoop() {
 		super();
@@ -69,11 +73,22 @@ public class Hulahoop {
 		this.isPolyPro = isPolyPro;
 	}
 
+	
+	public Hoopshop getHoopShop() {
+		return hoopShop;
+	}
+
+	public void setHoopShop(Hoopshop hoopShop) {
+		this.hoopShop = hoopShop;
+	}
+
 	@Override
 	public String toString() {
 		return "Hulahoop [id=" + id + ", color=" + color + ", outerDiamInches=" + outerDiamInches + ", isPolyPro="
-				+ isPolyPro + "]";
+				+ isPolyPro + ", hoopShop=" + hoopShop + "]";
 	}
+
+	
 	
 	
 

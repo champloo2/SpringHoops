@@ -1,11 +1,23 @@
 package dmacc.beans;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+@Entity
 public class Hulahoop {
 	
-	private long id;
+	 @Id
+	 @GeneratedValue(strategy = GenerationType.IDENTITY)
+	 private long id;
 	 private String color;
 	 private double outerDiamInches;
 	 private boolean isPolyPro;
+	 @Autowired
+	 private Hoopshop hoopShop;
 	 
 	public Hulahoop() {
 		super();
@@ -69,11 +81,22 @@ public class Hulahoop {
 		this.isPolyPro = isPolyPro;
 	}
 
+	
+	public Hoopshop getHoopShop() {
+		return hoopShop;
+	}
+
+	public void setHoopShop(Hoopshop hoopShop) {
+		this.hoopShop = hoopShop;
+	}
+
 	@Override
 	public String toString() {
 		return "Hulahoop [id=" + id + ", color=" + color + ", outerDiamInches=" + outerDiamInches + ", isPolyPro="
-				+ isPolyPro + "]";
+				+ isPolyPro + ", hoopShop=" + hoopShop + "]";
 	}
+
+	
 	
 	
 
